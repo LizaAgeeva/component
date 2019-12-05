@@ -1,0 +1,26 @@
+.headline{
+    text-align: center;
+    font-family: KG Batty Girl;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: normal;
+    color:#4c7fea;
+}
+.card-deck{
+    font-family: KG Batty Girl;
+    margin: 5px;
+}
+
+.card-header{
+    background-color:#4c7fea;
+    color: white;
+    font-style: bold;
+}
+.btn-primary{
+    background-color: #FF6969;
+    border-color: black;
+    font-style: bold;
+}
+button{
+    margin-top: 10px;;
+}

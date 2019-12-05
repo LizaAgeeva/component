@@ -1,0 +1,85 @@
+<div class="back">
+
+    <div class="headline"> Directives: </div>
+    <br>
+<div class="row">  
+    <div class="col-1"></div> 
+<div class="col-2 block">  
+    <button (click)="showBlockIfbtn()" type="button" class="btn btn-lg  btn-primary btnIf">*ngIf</button>
+</div>
+<div class="col-2 block">  
+    <button (click)="showBlockFor()" type="button" class="btn btn-lg  btn-primary btnFor">*ngFor</button>
+</div>
+<div class="col-2 block">  
+    <button (click)="showBlockSwitch()" type="button" class="btn btn-lg  btn-primary btnSwitch">ngSwitch</button>
+</div>
+<div class="col-2 block">  
+    <button (click)="showBlockStyle()" type="button" class="btn btn-lg  btn-primary btnStyle">ngStyle</button>
+</div>
+<div class="col-2 block">  
+    <button (click)="showBlockClass()" type="button" class="btn btn-lg  btn-primary btnClass">ngClass</button>
+</div>
+</div>
+<br>
+<div *ngIf="showIf">
+    <div *ngIf="isCollapsedIf" class="row">  
+        <div class="col-1"></div>
+        <div class="col-2">
+            <button type="button" (click)="showBlockIf()" class="btn btn-lg  btn-primary btnLeave">Look</button>
+        </div>
+    </div>    
+    <div *ngIf="!isCollapsedIf" class="row blockVisible">
+            <div class="col-3"></div>
+            <div class="col-4">
+            <img  width="400" alt="Logo" src="..\..\assets\images\goAway.png">
+        </div>
+        <div class="col-2">
+            <button type="button" (click)="showBlockIf()" class="btn btn-lg  btn-primary btnLeave">To Leave</button>
+        </div>
+    </div>     
+</div>
+<div *ngIf="showFor">
+    <ul>
+        <li *ngFor="let color of colors; let i = index">
+          {{i + 1}}. {{color}}
+          <img  width="100" alt="Logo" src="..\..\assets\images\{{color}}.png"> 
+        </li>
+       </ul>
+</div>
+
+<div *ngIf="showSwitch"class="row">
+        <div class="col-1"></div>
+        <div class="col-4">
+                <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="">Enter color</span>
+                        </div>
+                        <input type="text" class="form-control" [(ngModel)]="cat">
+                      </div>
+        </div>
+        <div [ngSwitch]="cat">
+                <div *ngSwitchCase="'green'"> <img  width="400" src="..\..\assets\images\green.png"></div>
+                <div *ngSwitchCase="'blue'"><img  width="400" src="..\..\assets\images\blue.png"></div>
+                <div *ngSwitchCase="'yellow'"><img  width="400" src="..\..\assets\images\yellow.png"></div>
+                <div *ngSwitchCase="'pink'"><img  width="400" src="..\..\assets\images\pink.png"></div>
+                <div *ngSwitchCase="'orange'"><img  width="400" src="..\..\assets\images\orange.png"></div>
+               
+                <div *ngSwitchDefault><img  width="400" src="..\..\assets\images\undefined.png"></div>
+               </div>
+</div>
+<div *ngIf="showClass">
+    <div>Without ngClass</div>
+    <div [ngClass]="{'newClass': true}">With ngClass</div>
+</div>
+
+<div *ngIf="showStyle">
+        <div>Without ngStyle</div>
+        <div [ngStyle]="{'color': 'lightpink', 'font-size': '36px'}">With ngStyle</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>

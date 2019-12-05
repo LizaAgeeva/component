@@ -1,0 +1,71 @@
+.back{
+    font-family: KG Batty Girl;
+    background-color :#FF6969;
+}
+
+.block{
+
+    font-size: 48px;
+    color: white;
+    font-weight: lighter ;
+}
+button{
+width:150px;
+height: 150px;
+font-style: bold;
+font-size: 36px;
+}
+.btn-primary{
+    background-color: #4c7fea;
+    border-color: #4c7fea;
+    
+}
+
+.headline{
+    text-align: center;
+    
+    font-size: 48px;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+
+.btnStyle{
+    background-color: #FDD86D;
+    border-color:  #FDD86D;
+    color:#F24F52;
+}
+.btnFor{
+    background-color: #5446D9;
+    border-color:  #5446D9;
+    color:#FAAF4A;
+}
+.btnSwitch{
+    background-color: #FFB9A7;
+    border-color:  #FFB9A7;
+    color:#F24F52;
+}
+.btnIf{
+    background-color: #05B199;
+    border-color:  #05B199;
+    color:#A3E7FE;
+}
+.btnClass{
+    background-color: #FFB584;
+    border-color:  #FFB584;
+    color:#F24F52;
+}
+
+.btnLeave{
+    height: 50px;
+    font-size: 24px;
+}
+
+ul{
+    font-size: 36px;
+}
+
+.newClass{
+    font-size: 36px;
+    color: white;
+}
